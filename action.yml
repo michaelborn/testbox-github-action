@@ -1,0 +1,13 @@
+name: TestBox
+description: Sets up TestBox for GitHub Actions
+
+branding:
+  icon: terminal
+  color: blue
+
+inputs:
+runs:
+  using: "composite"
+  steps: 
+    - shell: bash
+      run: box testbox run

@@ -1,0 +1,12 @@
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Ensures the action is working
+    steps:
+      - name: Setup CommandBox
+        uses: actions/setup-commandbox
+
+      - name: Run local action
+        uses: ./
